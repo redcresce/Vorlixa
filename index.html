@@ -1,297 +1,214 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vlarix | خدمات سوشيال ميديا احترافية (Facebook • Instagram • TikTok • Telegram)</title>
-  <meta name="description" content="Vlarix – موقع عصري لعرض وبيع خدمات زيادة متابعين ولايكات ومشاهدات لمنصات فيسبوك، إنستغرام، تيك توك، وتلغرام. طلب فوري عبر واتساب." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Cairo', 'ui-sans-serif', 'system-ui']
-          },
-          boxShadow: {
-            glow: '0 0 40px rgba(99, 102, 241, 0.25)',
-          },
-          colors: {
-            fb: {
-              50:'#eef2ff', 100:'#e0e7ff', 200:'#c7d2fe', 300:'#a5b4fc', 400:'#818cf8', 500:'#6366f1', 600:'#4f46e5', 700:'#4338ca', 800:'#3730a3', 900:'#312e81'
-            },
-            ig: {
-              500:'#c13584'
-            },
-            tt: {
-              500:'#111111', 600:'#0f0f0f'
-            },
-            tg: {
-              500:'#229ED9'
-            }
-          },
-          animation: {
-            'float': 'float 6s ease-in-out infinite',
-            'pulse-slow': 'pulse 3s ease-in-out infinite',
-          },
-          keyframes: {
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-10px)' }
-            }
-          }
-        }
-      }
-    }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تسجيل طلب مساعدات غذائية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    .glass { background: rgba(255,255,255,0.08); box-shadow: 0 8px 32px rgba(2,6,23,0.25); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.15); }
-    .ai-gradient { background: radial-gradient(1200px 800px at 100% -10%, rgba(99,102,241,0.35), transparent 60%), radial-gradient(900px 600px at -10% 100%, rgba(168,85,247,0.35), transparent 60%), linear-gradient(135deg, #0f172a 0%, #0b1220 100%); }
-    .ai-shot { background: conic-gradient(from 180deg at 50% 50%, #a78bfa, #60a5fa, #34d399, #f472b6, #a78bfa); mask: radial-gradient(circle at 50% 50%, black 40%, transparent 41%); }
-    ::-webkit-scrollbar { height: 10px; width: 10px; }
-    ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #6366f1, #a855f7); border-radius: 999px; }
+    body {
+      font-family: 'Tajawal', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #c94e4d;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 16px;
+      margin-bottom: 8px;
+      display: block;
+      color: #555;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #c94e4d;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #a74342;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    .small {
+      flex: 1;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .file-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .file-label input {
+      border: none;
+    }
   </style>
 </head>
-<body class="font-sans text-slate-100 ai-gradient min-h-screen selection:bg-indigo-500/30 selection:text-white">
-  <!-- زخارف خلفية عائمة -->
-  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-    <div class="absolute -top-10 -left-10 w-72 h-72 rounded-full blur-3xl opacity-20 animate-float" style="background: radial-gradient(circle, #6366f1, transparent 60%)"></div>
-    <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-20 animate-float" style="animation-delay:1.5s;background: radial-gradient(circle, #a855f7, transparent 60%)"></div>
-  </div>  <!-- شريط علوي -->  <header class="sticky top-0 z-30">
-    <div class="glass">
-      <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-        <a href="#/facebook" class="flex items-center gap-3 group">
-          <span class="relative grid place-items-center w-10 h-10 rounded-2xl overflow-hidden">
-            <span class="absolute inset-0 ai-shot animate-pulse-slow"></span>
-            <span class="absolute inset-0 bg-slate-900/30"></span>
-          </span>
-          <div class="leading-tight">
-            <div class="text-lg font-extrabold">Vlarix</div>
-            <div class="text-xs text-slate-300">خدمات سوشيال ميديا احترافية</div>
-          </div>
-        </a>
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#/facebook" class="hover:text-white/90 text-slate-300">فيسبوك</a>
-          <a href="#/instagram" class="hover:text-white/90 text-slate-300">إنستغرام</a>
-          <a href="#/tiktok" class="hover:text-white/90 text-slate-300">تيك توك</a>
-          <a href="#/telegram" class="hover:text-white/90 text-slate-300">تلغرام</a>
-        </nav>
-        <a id="wa-top" href="https://wa.me/+963980962294" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-2xl bg-emerald-500/90 hover:bg-emerald-500 px-4 py-2 font-semibold shadow-glow transition">
-          تواصل واتساب
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 .5A11.5 11.5 0 0 0 2.43 19.18L1 24l4.96-1.29A11.5 11.5 0 1 0 12 .5Zm6.78 16.7c-.28.8-1.39 1.46-2.28 1.65-.61.13-1.4.22-4.06-.84-3.41-1.41-5.6-4.86-5.77-5.08-.16-.22-1.38-1.85-1.38-3.53s.85-2.5 1.16-2.84c.28-.32.74-.46 1.18-.46.14 0 .27 0 .39.01.35.01.52.04.75.58.28.67.96 2.33 1.05 2.5.08.17.14.37.03.59-.11.22-.17.35-.34.54-.17.2-.29.35-.42.56-.13.21-.28.44-.12.71.17.27.77 1.27 1.66 2.06 1.15 1.02 2.11 1.34 2.41 1.49.3.15.48.13.66-.08.18-.21.76-.88.96-1.19.2-.31.41-.25.68-.15.28.1 1.77.83 2.07.98.3.15.5.23.57.36.07.13.07.76-.21 1.56Z"/></svg>
-        </a>
-      </div>
-    </div>
-  </header>  <!-- محتوى ديناميكي لكل قسم -->  <main class="mx-auto max-w-7xl px-4 py-10" id="app"></main>  <!-- فوتر -->  <footer class="border-t border-white/10">
-    <div class="mx-auto max-w-7xl px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="text-sm text-slate-400">© <span id="y"></span> Vlarix. جميع الحقوق محفوظة.</div>
-      <div class="flex items-center gap-3 text-sm">
-        <a class="hover:text-white/80" href="https://wa.me/+963980962294" target="_blank" rel="noopener">واتساب</a>
-        <span class="text-slate-600">|</span>
-        <a class="hover:text-white/80" href="#/facebook">فيسبوك</a>
-        <span class="text-slate-600">|</span>
-        <a class="hover:text-white/80" href="#/instagram">إنستغرام</a>
-        <span class="text-slate-600">|</span>
-        <a class="hover:text-white/80" href="#/tiktok">تيك توك</a>
-        <span class="text-slate-600">|</span>
-        <a class="hover:text-white/80" href="#/telegram">تلغرام</a>
-      </div>
-    </div>
-  </footer>  <!-- زر واتساب عائم -->  <a href="https://wa.me/+963980962294" target="_blank" rel="noopener" class="fixed bottom-5 left-5 rounded-full p-4 bg-emerald-500/90 hover:bg-emerald-500 shadow-lg">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M12 .5A11.5 11.5 0 0 0 2.43 19.18L1 24l4.96-1.29A11.5 11.5 0 1 0 12 .5Zm6.78 16.7c-.28.8-1.39 1.46-2.28 1.65-.61.13-1.4.22-4.06-.84-3.41-1.41-5.6-4.86-5.77-5.08-.16-.22-1.38-1.85-1.38-3.53s.85-2.5 1.16-2.84c.28-.32.74-.46 1.18-.46.14 0 .27 0 .39.01.35.01.52.04.75.58.28.67.96 2.33 1.05 2.5.08.17.14.37.03.59-.11.22-.17.35-.34.54-.17.2-.29.35-.42.56-.13.21-.28.44-.12.71.17.27.77 1.27 1.66 2.06 1.15 1.02 2.11 1.34 2.41 1.49.3.15.48.13.66-.08.18-.21.76-.88.96-1.19.2-.31.41-.25.68-.15.28.1 1.77.83 2.07.98.3.15.5.23.57.36.07.13.07.76-.21 1.56Z"/></svg>
-  </a>  <!-- سكربت SPA + الحساب + واتساب -->  <script>
-    const WHATSAPP_BASE = 'https://wa.me/+963980962294';
+<body>
 
-    const ICONS = {
-      likes: () => `
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10">
-          <path fill="currentColor" d="M47 8c-5 0-8 3-15 11C25 11 22 8 17 8 10 8 5 13 5 20c0 15 27 31 27 31s27-16 27-31c0-7-5-12-12-12Z"/>
-        </svg>` ,
-      followers: () => `
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10">
-          <circle cx="22" cy="22" r="10" fill="currentColor"/>
-          <rect x="6" y="38" width="32" height="16" rx="8" fill="currentColor"/>
-          <circle cx="46" cy="20" r="6" fill="currentColor"/>
-          <rect x="38" y="34" width="20" height="10" rx="5" fill="currentColor"/>
-        </svg>` ,
-      views: () => `
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10">
-          <path d="M2 32s12-16 30-16 30 16 30 16-12 16-30 16S2 32 2 32Z" fill="currentColor"/>
-          <circle cx="32" cy="32" r="8" fill="#0b1220"/>
-        </svg>` ,
-      comments: () => `
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10">
-          <rect x="6" y="10" width="52" height="34" rx="8" fill="currentColor"/>
-          <path d="M20 44v10l10-10" fill="currentColor"/>
-        </svg>` ,
-      share: () => `
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10">
-          <circle cx="16" cy="32" r="6" fill="currentColor"/>
-          <circle cx="48" cy="16" r="6" fill="currentColor"/>
-          <circle cx="48" cy="48" r="6" fill="currentColor"/>
-          <path d="M22 32 42 20" stroke="currentColor" stroke-width="4"/>
-          <path d="M22 32 42 44" stroke="currentColor" stroke-width="4"/>
-        </svg>` ,
-      tg: () => `
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" class="w-10 h-10">
-          <path fill="currentColor" d="M120 0a120 120 0 1 0 0 240 120 120 0 0 0 0-240Zm53 77-18 85c-1 5-4 7-8 5l-22-16-11 11c-1 1-2 2-4 2l1-23 41-37c2-2 0-3-3-1l-51 32-22-7c-5-2-5-5 1-7l93-36c4-2 8 1 6 7Z"/>
-        </svg>`
-    };
+  <div class="container">
+    <h1>نموذج تسجيل طلب مساعدات غذائية</h1>
+    <p class="note">يرجى إدخال بياناتك بشكل دقيق. هذه النسخة تجريبية.</p>
 
-    // تعريف الخدمات لكل منصة
-    const PLATFORMS = {
-      facebook: {
-        title: 'فيسبوك',
-        subtitle: 'نمّي وجودك على فيسبوك بأسلوب Vlarix الحديث',
-        theme: { badge: 'bg-fb-500/20 border-fb-500/30', button: 'bg-fb-500/90 hover:bg-fb-500', accent: 'text-fb-300' },
-        services: [
-          { name:'لايكات منشورات', desc:'زيادة إعجابات المنشورات بسرعة وموثوقية.', min:100, step:50, def:500, unitPrice:1.5, unitBase:100, badge:'حقيقي/مختلط', icon:'likes' },
-          { name:'متابعون للصفحة', desc:'رفع عدد متابعي صفحتك بثبات ممتاز.', min:100, step:50, def:1000, unitPrice:2.8, unitBase:100, badge:'ثابت', icon:'followers' },
-          { name:'مشاهدات فيديو', desc:'زيادة مشاهدات الفيديو بسرعة عالية.', min:500, step:100, def:2000, unitPrice:0.9, unitBase:1000, badge:'سريع', icon:'views' },
-          { name:'تعليقات مخصصة', desc:'إضافة تعليقات بنصوصك الخاصة.', min:20, step:5, def:50, unitPrice:0.25, unitBase:1, badge:'نصوص خاصة', icon:'comments' },
-          { name:'مشاركات منشورات', desc:'رفع المشاركات للوصول الأوسع.', min:50, step:10, def:200, unitPrice:0.15, unitBase:1, badge:'نشر واسع', icon:'share' },
-        ]
-      },
-      instagram: {
-        title: 'إنستغرام',
-        subtitle: 'خدمات متابعين، لايكات، ريلز بستايل إنستغرام.',
-        theme: { badge: 'bg-pink-500/20 border-pink-400/30', button: 'bg-pink-500/90 hover:bg-pink-500', accent: 'text-pink-300' },
-        services: [
-          { name:'متابعون إنستغرام', desc:'متابعون عالي الجودة وثبات ممتاز.', min:100, step:50, def:1000, unitPrice:3.2, unitBase:100, badge:'ثابت', icon:'followers' },
-          { name:'لايكات صور', desc:'لايكات سريعة على الصور والمنشورات.', min:100, step:50, def:500, unitPrice:1.6, unitBase:100, badge:'سريع', icon:'likes' },
-          { name:'مشاهدات Reels', desc:'ادفع الريلز للترند.', min:500, step:100, def:3000, unitPrice:1.1, unitBase:1000, badge:'ترند', icon:'views' },
-          { name:'تعليقات مخصصة', desc:'تعليقات بنصوص مخصصة.', min:20, step:5, def:50, unitPrice:0.3, unitBase:1, badge:'نصوص خاصة', icon:'comments' },
-        ]
-      },
-      tiktok: {
-        title: 'تيك توك',
-        subtitle: 'مشاهدات، متابعون، لايكات بفاست دليفري.',
-        theme: { badge: 'bg-slate-700/50 border-slate-600', button: 'bg-slate-800 hover:bg-slate-700', accent: 'text-slate-300' },
-        services: [
-          { name:'مشاهدات فيديو', desc:'مشاهدات سريعة لمقاطعك.', min:1000, step:500, def:5000, unitPrice:0.7, unitBase:1000, badge:'سريع', icon:'views' },
-          { name:'متابعون تيك توك', desc:'نمو مستمر وثابت.', min:100, step:50, def:800, unitPrice:2.5, unitBase:100, badge:'ثابت', icon:'followers' },
-          { name:'لايكات فيديو', desc:'تعزيز التفاعل على المقاطع.', min:200, step:50, def:1000, unitPrice:1.0, unitBase:100, badge:'تفاعل', icon:'likes' },
-        ]
-      },
-      telegram: {
-        title: 'تلغرام',
-        subtitle: 'مشتركين قنوات وجروبات مع جودة ممتازة.',
-        theme: { badge: 'bg-sky-500/20 border-sky-400/30', button: 'bg-sky-500/90 hover:bg-sky-500', accent: 'text-sky-300' },
-        services: [
-          { name:'مشتركين قناة', desc:'زيادة أعضاء القناة بسرعة وثبات.', min:100, step:50, def:1000, unitPrice:2.2, unitBase:100, badge:'قناة', icon:'tg' },
-          { name:'أعضاء جروب', desc:'رفع أعضاء الجروب بتدرج طبيعي.', min:100, step:50, def:800, unitPrice:1.9, unitBase:100, badge:'جروب', icon:'tg' },
-        ]
+    <form id="aidForm">
+      <label>الاسم الثلاثي</label>
+      <input type="text" id="fullName" name="fullName" placeholder="مثال: محمد أحمد الخالد" required>
+
+      <label>رقم الهاتف</label>
+      <input type="tel" id="phone" name="phone" placeholder="مثال: 0999123456" required>
+
+      <label>مكان السكن</label>
+      <select id="location" name="location" required>
+        <option value="">-- اختر المحافظة أو الريف --</option>
+        <option>دمشق</option>
+        <option>ريف دمشق</option>
+        <option>حلب</option>
+        <option>ريف حلب</option>
+        <option>حمص</option>
+        <option>ريف حمص</option>
+        <option>حماه</option>
+        <option>ريف حماه</option>
+        <option>اللاذقية</option>
+        <option>ريف اللاذقية</option>
+        <option>طرطوس</option>
+        <option>ريف طرطوس</option>
+        <option>إدلب</option>
+        <option>ريف إدلب</option>
+        <option>الرقة</option>
+        <option>ريف الرقة</option>
+        <option>دير الزور</option>
+        <option>ريف دير الزور</option>
+        <option>الحسكة</option>
+        <option>ريف الحسكة</option>
+        <option>درعا</option>
+        <option>ريف درعا</option>
+        <option>القنيطرة</option>
+        <option>ريف القنيطرة</option>
+        <option>السويداء</option>
+        <option>ريف السويداء</option>
+      </select>
+
+      <label class="file-label">تحميل البطاقة الشخصية
+        <input type="file" id="idFile" name="idFile" accept="image/*,.pdf" required>
+      </label>
+
+      <div class="row">
+        <div class="small">
+          <label>هل تحتاج مساعدات غذائية الآن؟</label>
+          <select id="urgent" name="urgent">
+            <option value="نعم">نعم</option>
+            <option value="لا">لا</option>
+          </select>
+        </div>
+        <div class="small">
+          <label>عدد أفراد الأسرة</label>
+          <input type="number" id="household" name="household" min="1" value="1">
+        </div>
+      </div>
+
+      <label>ملاحظات إضافية</label>
+      <input type="text" id="notes" name="notes" placeholder="مثال: حالات خاصة، أفراد ذوي إعاقة...">
+
+      <button type="submit">أرسل الطلب</button>
+    </form>
+
+    <div id="msg" class="note"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById('aidForm');
+    const msg = document.getElementById('msg');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      msg.textContent = '';
+
+      const fullName = document.getElementById('fullName').value;
+      const phone = document.getElementById('phone').value;
+      const location = document.getElementById('location').value;
+      const urgent = document.getElementById('urgent').value;
+      const household = document.getElementById('household').value;
+      const notes = document.getElementById('notes').value;
+
+      if (!fullName || !phone || !location) {
+        msg.style.color = 'crimson';
+        msg.textContent = 'جميع الحقول مطلوبة.';
+        return;
       }
-    };
 
-    function formatUSD(n){
-      return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(n);
-    }
+      const endpoint = 'https://api.telegram.org/bot<7685872798:AAHYD4pnuZSVqy5wS87OzZ0qyeaRERyRTy4>/sendMessage';
+      const chat_id = '<5946998458>';
 
-    function serviceCardHTML(s, idx, theme){
-      return `
-        <article class="group glass rounded-3xl p-5 hover:shadow-glow transition relative">
-          <div class="absolute -top-4 -left-4 w-16 h-16 rounded-2xl ai-shot opacity-70 group-hover:opacity-100 transition"></div>
-          <div class="relative">
-            <div class="flex items-center justify-between mb-3">
-              <h3 class="text-xl font-bold">${s.name}</h3>
-              <span class="text-xs ${theme.badge} border px-2 py-1 rounded-xl">${s.badge}</span>
-            </div>
-            <p class="text-slate-300 text-sm mb-4">${s.desc}</p>
-            <div class="rounded-2xl overflow-hidden border border-white/10">
-              <div class="aspect-[16/9] grid place-items-center text-sm text-white/90">
-                <div class="text-white/90 ${theme.accent}">${ICONS[s.icon]()}</div>
-              </div>
-            </div>
-            <div class="mt-4 grid gap-3">
-              <label class="text-sm text-slate-300">الكمية (الحد الأدنى ${s.min})</label>
-              <input type="number" min="${s.min}" step="${s.step}" value="${s.def}" class="qty block w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-2 focus:outline-none focus:ring-2 ${theme.button.replace('bg-','ring-')}" />
-              <div class="flex items-center justify-between text-sm">
-                <span class="text-slate-300">السعر:</span>
-                <span class="price font-bold" data-unit-price="${s.unitPrice}" data-unit-base="${s.unitBase}">$ —</span>
-              </div>
-              <a href="#" data-idx="${idx}" class="buy w-full inline-flex justify-center items-center rounded-2xl ${theme.button} px-4 py-2 font-semibold transition" target="_blank" rel="noopener">اشتري عبر واتساب</a>
-            </div>
-            <input type="hidden" class="service-name" value="${s.name}" />
-          </div>
-        </article>`;
-    }
+      const messageData = {
+        chat_id: chat_id,
+        text: `طلب جديد من:\nالاسم: ${fullName}\nالهاتف: ${phone}\nالمكان: ${location}\nهل يحتاج مساعدات غذائية الآن؟: ${urgent}\nعدد أفراد الأسرة: ${household}\nملاحظات: ${notes}`,
+      };
 
-    function sectionHTML(key){
-      const p = PLATFORMS[key];
-      if(!p) return '<div class="text-center py-20">القسم غير موجود.</div>';
-      document.title = `Vlarix | ${p.title}`;
-      return `
-        <section class="pt-2">
-          <div class="mb-8">
-            <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">${p.title}</h1>
-            <p class="mt-3 text-slate-300">${p.subtitle}</p>
-          </div>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            ${p.services.map((s,i)=>serviceCardHTML(s,i,p.theme)).join('')}
-          </div>
-          <p class="mt-6 text-xs text-slate-400">💡 عدّل الأسعار أو الحدود من خلال قيم <code class="text-emerald-300">data-unit-price</code> و <code class="text-emerald-300">data-unit-base</code> وخصائص <code class="text-emerald-300">min</code>/<code class="text-emerald-300">step</code> لكل خدمة.</p>
-        </section>`;
-    }
-
-    function updateCardPrice(card){
-      const qtyInput = card.querySelector('.qty');
-      const priceEl = card.querySelector('.price');
-      const unitPrice = parseFloat(priceEl.dataset.unitPrice);
-      const unitBase = parseFloat(priceEl.dataset.unitBase);
-      const min = parseInt(qtyInput.min || '1', 10);
-      const qty = Math.max(parseInt(qtyInput.value || 0, 10), min);
-      const total = (qty / unitBase) * unitPrice;
-      priceEl.textContent = formatUSD(total);
-      return { qty, total };
-    }
-
-    function composeWhatsApp(serviceName, qty, total, platformKey){
-      const text = `مرحبا، أريد طلب خدمة من Vlarix
-المنصة: ${PLATFORMS[platformKey].title}
-الخدمة: ${serviceName}
-الكمية: ${qty}
-السعر التقريبي: ${formatUSD(total)}
-الرجاء المتابعة لإتمام الطلب.`;
-      const u = new URL(WHATSAPP_BASE);
-      u.searchParams.set('text', text);
-      return u.toString();
-    }
-
-    function bindCardEvents(root, platformKey){
-      root.querySelectorAll('article').forEach((card)=>{
-        const qtyInput = card.querySelector('.qty');
-        const buyBtn = card.querySelector('.buy');
-        const name = card.querySelector('.service-name').value;
-        // تحديث السعر مبدئياً
-        const init = ()=> updateCardPrice(card);
-        init();
-        qtyInput.addEventListener('input', ()=> updateCardPrice(card));
-        buyBtn.addEventListener('click', (e)=>{
-          e.preventDefault();
-          const { qty, total } = updateCardPrice(card);
-          const url = composeWhatsApp(name, qty, total, platformKey);
-          buyBtn.setAttribute('href', url); // تعيين الرابط مباشرة لتفادي حظر النوافذ
-          // فتح في نفس التبويب إذا احتجت:
-          // window.location.href = url;
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(messageData),
         });
-      });
-    }
 
-    function render(){
-      const hash = (location.hash || '#/facebook').replace('#/','');
-      const key = ['facebook','instagram','tiktok','telegram'].includes(hash)? hash : 'facebook';
-      const app = document.getElementById('app');
-      app.innerHTML = sectionHTML(key);
-      bindCardEvents(app, key);
-    }
-
-    window.addEventListener('hashchange', render);
-    document.addEventListener('DOMContentLoaded', ()=>{
-      render();
-      document.getElementById('y').textContent = new Date().getFullYear();
+        if (res.ok) {
+          msg.style.color = 'green';
+          msg.textContent = 'تم إرسال الطلب بنجاح. شكراً.';
+          form.reset();
+        } else {
+          msg.style.color = 'crimson';
+          msg.textContent = 'حدث خطأ أثناء الإرسال.';
+        }
+      } catch (err) {
+        msg.style.color = 'crimson';
+        msg.textContent = 'فشل الاتصال بالسيرفر.';
+        console.error(err);
+      }
     });
-  </script></body>
+  </script>
+
+</body>
 </html>
